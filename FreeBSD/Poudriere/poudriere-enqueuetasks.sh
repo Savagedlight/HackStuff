@@ -93,7 +93,7 @@ QueueStuff() {
  # 2: path to file with ports to build
  # 3: build jail name
  # 4: set name
- poudriere queue "$1" bulk -f "$2" -j $3 -z $4 >> /dev/null
+ poudriere queue "$1" bulk -f "$2" -j "$3" -z "$4" >> /dev/null
 }
 
 # -I: Don't list hidden files (which is default for root)
