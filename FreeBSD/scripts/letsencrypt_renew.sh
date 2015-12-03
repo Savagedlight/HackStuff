@@ -1,3 +1,4 @@
+#!/bin/sh
 # Copyright (c) 2015 Marie Helene Kvello-Aune (marieheleneka at gmail dot com; http://savagedlight.me)
 # 
 # Permission is hereby granted, free of charge, to any person obtaining a copy
@@ -31,10 +32,10 @@ DOMAINS="-d example.com -d domain1.example.com -d someothedomain.example"
 DIR=/tmp/letsencrypt-auto
 
 # Probably don't need to edit below here
-OPENSSL=/usr/bin/openssl
-LETSENCRYPT=/usr/local/bin/letsencrypt
+OPENSSL="/usr/bin/openssl"
+LETSENCRYPT="/usr/local/bin/letsencrypt"
 # It's good enough to reload nginx. Other webservers may require restart.
-RELOADWEBSERVER=/usr/sbin/service nginx reload
+RELOADWEBSERVER="/usr/sbin/service nginx reload"
 
 #
 # End of configuration.
