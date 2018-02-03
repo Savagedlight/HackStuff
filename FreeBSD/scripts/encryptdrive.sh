@@ -39,7 +39,7 @@ then
 fi
 
 geli init -l 256 -P -s ${blocksize} -K ${gelikey} /dev/gpt/${1}
-geli attach -p -k /root/keys/storage.eli.key /dev/gpt/${1}
+geli attach -p -k ${gelikey} /dev/gpt/${1}
 echo "$1 is now encrypted. Provider: /dev/gpt/${1}.eli"
 echo "Remember to add device (/dev/gpt/${1}) to rc.conf geli_devices variable!"
 echo " "
